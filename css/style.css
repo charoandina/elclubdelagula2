@@ -1,0 +1,87 @@
+body {
+    background-image: url('../img/background.png');
+    background-attachment: fixed;
+}
+
+h1 {
+    font-family: 'Orbitron', sans-serif;
+    color: #fefeff;
+    font-size: 2.5em;
+    text-align: center;
+    margin: 1em 2em 1em 2em;
+}
+
+nav {
+    background-color: rgb(0, 0, 0,.6);
+}
+
+
+.fuenteNav{
+font-family: 'Orbitron', sans-serif;
+color: #fefeff;
+}
+
+.imgLogo {
+    width: 9em;
+    height: 9em;
+}
+
+.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-item:hover .nav-link {
+    color: #0cecdd;
+}
+
+.imgChupetin {
+    width: 4em;
+    height: 4em;
+    transform: rotate(20deg);
+}
+
+.imgBotella {
+    transform: rotate(-20deg);
+}
+
+.pIndex {
+    font-family: 'Orbitron', sans-serif;
+    color: #fefeff;
+    font-size: 1.2em;
+}
+
+.pEsperando {
+    font-size: 2em;
+}
+
+.botonIrCatalogo {
+    margin: 1em none 2em none;
+    border-color: #e058e4;
+    background-color: transparent;
+    font-size: 1.5em;
+    color: #fefeff;
+    font-family: 'Orbitron', sans-serif;
+    padding: 1em;
+    width: auto;
+}
+
+.botonIrCatalogo:hover {
+    background-color: #e058e4;
+    color: #0cecdd;
+    transition: 1s;
+    border: #0cecdd 0.1em solid;
+}
+
+.imgFlecha {
+    width: 5em;
+    height: 5em;
+}
+
+.iconosSectionFinal {
+    width: 10em;
+    height: 9em;
+}
+
+.pSectionFinal {
+    font-family: 'Orbitron', sans-serif;
+    color: #fefeff;
+    font-size: 1.2em;
+}
+
