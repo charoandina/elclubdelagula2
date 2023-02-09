@@ -106,31 +106,53 @@ function mostrarProductos() {
 
 mostrarProductos ();
 
-const productoUsuario = prompt ("Ingresa el nombre del producto que quieras");
+const productoUsuario = prompt ("Ingresa el nombre del producto que quieras").toLowerCase();
 const cantidadProducto = parseInt (prompt ("¿Cuantos vas a querer?"));
-
-
-if (productoUsuario == "Milka Oreo") {
-    let subtotal = cantidadProducto * producto1.precio
-    console.log(subtotal)
-} else (productoUsuario)
+let subtotal = 0;
 
 switch (productoUsuario) {
-    case "Milka Oreo":
     case "milka oreo":
-        let subtotal = cantidadProducto * producto1.precio
+        subtotal = cantidadProducto * producto1.precio
         alert ("Tu pedido es: " + productoUsuario + ", y vas a querer: " + cantidadProducto + ". Será un total de: $" + subtotal )
         break;
-    case "Milka Chips Ahoy":
     case "milka chips ahoy":
-        let subtotal2 = cantidadProducto * producto2.precio
-        alert ("Tu pedido es: " + productoUsuario + ", y vas a querer: " + cantidadProducto + ". Será un total de: $" + subtotal )
+        subtotal = cantidadProducto * producto2.precio
+        alert ("Tu pedido es: " + productoUsuario + ", y vas a querer: " + cantidadProducto + ". Será un total de: $" + subtotal)
+        break;
+    case "milka con leche":
+        subtotal = cantidadProducto * producto3.precio
+        alert ("Tu pedido es: " + productoUsuario + ", y vas a querer: " + cantidadProducto + ". Será un total de: $" + subtotal)
+        break;
+    case "milka caramel":
+        subtotal = cantidadProducto * producto4.precio
+        alert ("Tu pedido es: " + productoUsuario + ", y vas a querer: " + cantidadProducto + ". Será un total de: $" + subtotal)
+        break;
+    case "kinder bueno":
+        subtotal = cantidadProducto * producto5.precio
+        alert ("Tu pedido es: " + productoUsuario + ", y vas a querer: " + cantidadProducto + ". Será un total de: $" + subtotal)
+        break;
+    case "kinder bueno blanco":
+        subtotal = cantidadProducto * producto6.precio
+        alert ("Tu pedido es: " + productoUsuario + ", y vas a querer: " + cantidadProducto + ". Será un total de: $" + subtotal)
+        break;
+    case "kit-kat":
+        subtotal = cantidadProducto * producto7.precio
+        alert ("Tu pedido es: " + productoUsuario + ", y vas a querer: " + cantidadProducto + ". Será un total de: $" + subtotal)
         break;
     default:
+        alert ("Ese producto no está disponible, pero hay mejores");
         break;
 }
 
+let servicioPropina = parseInt (prompt("El costo de envio es gratuito, pero pensamos en nuestros repartidores siempre. ¿Cuanto queres dejarle de propina?"))
+let totalConPropina = [];
 
+function calcularPropina () {
+    totalConPropina = subtotal + servicioPropina;
+    alert ("El total de la compra será de: $" + totalConPropina + "Gracias por pasar por El Club de la Gula!");
+}
+
+calcularPropina ();
 
 
 
